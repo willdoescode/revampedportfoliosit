@@ -58,7 +58,7 @@ export default {
     .title {
       color: black;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 24px;
       transition: 0.3s;
       &:hover {
         color: #42b983;
@@ -67,6 +67,7 @@ export default {
     }
     .desc {
       color: black;
+      font-size: 18px;
       transition: 0.3s;
     }
   }

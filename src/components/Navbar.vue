@@ -1,47 +1,20 @@
 <template>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <router-link to="/" class="navbar-brand">Will Does Tech</router-link>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <!--          default icon for the toggler-->
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <router-link to="/" class="nav-link">Home</router-link>
-          </li>
-          <li class="nav-item">
-            <!--              about page button-->
-            <router-link class="nav-link" to="/about">About</router-link>
-          </li>
-          <li class="nav-item">
-            <!--              contacts page button-->
-            <router-link class="nav-link" to="/contacts">Contacts</router-link>
-          </li>
-          <li class="nav-item">
-            <!--              website design class page button-->
-            <router-link class="nav-link" to="/webdesign">Web Design</router-link>
-          </li>
-          <li class="nav-item">
-            <!--              posts page button-->
-            <router-link class="nav-link" to="/posts">Posts</router-link>
-          </li>
-          <li class="nav-item">
-            <!--              my generic social media account name-->
-            <span class="navbar-text">@willdoescode</span>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <div>
+    <b-navbar toggleable="lg" type="dark" variant="info">
+      <b-navbar-brand href="/">Will Does Tech</b-navbar-brand>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item><router-link class="link" to="/">Home</router-link></b-nav-item>
+          <b-nav-item><router-link class="link" to="/about">About</router-link></b-nav-item>
+          <b-nav-item><router-link class="link" to="/contacts">Contacts</router-link></b-nav-item>
+          <b-nav-item><router-link class="link" to="/webdesign">Webdesign</router-link></b-nav-item>
+          <b-nav-item><router-link class="link" to="/posts">Posts</router-link></b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
@@ -50,3 +23,16 @@ export default {
   name: "Navbar"
 };
 </script>
+<style lang="scss" scoped>
+a {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    text-decoration: none;
+    color: #2a5470 !important;
+  }
+  &.router-link-exact-active {
+    color: #2a5470;
+  }
+}
+</style>

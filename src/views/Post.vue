@@ -1,12 +1,13 @@
 <template>
   <div class="container">
     <div class="back">
-      <!--      basic back button routing-->
-      <router-link class="back-button" to="/posts">Back</router-link>
+      <router-link class="btn-primary btn" to="/posts">Back</router-link>
     </div>
-    <!--    display the current posts title and body-->
-    <h1>{{ post.title }}</h1>
-    <h3>{{ post.body }}</h3>
+    <div class="post">
+      <!--    display the current posts title and body-->
+      <h1>{{ post.title }}</h1>
+      <h3>{{ post.body }}</h3>
+    </div>
   </div>
 </template>
 
@@ -27,6 +28,21 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  color: black;
+  margin: 10% auto;
+  max-width: 800px;
+  .post {
+    background-color: #4c4177;
+    background-image: linear-gradient(315deg, #4c4177, #2a5470);
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    h1 {
+      font-weight: bold;
+    }
+  }
+}
+.btn {
+  float: left;
+  margin-right: -70px;
 }
 </style>
