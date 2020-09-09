@@ -16,3 +16,10 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" scoped>
+img
+  transition: 0.3s
+  &:hover
+    transform: scale(1.4)
+</style>
