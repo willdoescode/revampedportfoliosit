@@ -1,4 +1,6 @@
 # newportfoliorevamp
+![yo](site.png)
+
 
 ## Project setup
 ```
