@@ -27,7 +27,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 .container {
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 10% auto;
   max-width: 800px;
   .post {

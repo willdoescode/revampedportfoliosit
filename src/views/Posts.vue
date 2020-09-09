@@ -42,7 +42,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 .main {
+  font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;

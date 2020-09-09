@@ -12,7 +12,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 .container {
+  font-family: 'Source Sans Pro', sans-serif;
   margin-top: 80px;
   h3 {
     margin-top: 8px;
@@ -20,6 +23,7 @@ export default {
 }
 
 .me {
+  font-family: 'Source Sans Pro', sans-serif;
   width: 300px;
   border-radius: 50%;
   transition: 0.8s;

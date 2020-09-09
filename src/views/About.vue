@@ -29,14 +29,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 .container {
+  font-family: 'Source Sans Pro', sans-serif;
   display: block;
   place-items: center;
   width: 70vw;
   margin-top: 80px;
   p {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
     background-color: #4c4177;
     background-image: linear-gradient(315deg, #4c4177, #2a5470);
     color: white;
