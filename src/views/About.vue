@@ -1,5 +1,42 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="container">
+    <p class="about">
+      Hi, My name is Will Lane. I am a {{ getYear() }} year old high school student, and am a coder!
+      My coding journey so far has been interesting. I started with Python and I liked it very much. Using Python I wrote an automated
+      <a target="_blank" href="https://github.com/willdoescode/bot">bot</a> for the popular chat service called discord. Then I moved on to Java, and wrote an
+      <a target="_blank" href="https://github.com/willdoescode/willsautoclick"> autoclicker</a> using the popular Java library called swing.
+      Now I am at the web dev stage of my coding journey, I am learning the progressive JS framework called Vue.Js, which I wrote <a target="_blank" href="https://github.com/willdoescode/portfoliosite">this site</a> in and I am enjoying web dev very much.
+    </p>
   </div>
 </template>
+
+<script>
+export default {
+  name: "About",
+  methods: {
+    getYear() {
+      let year = new Date().getFullYear();
+      // get the full year
+      if (new Date().getMonth() < 9 && new Date().getDay() < 23) {
+        // if the month is less than september and the day is less than the 23rd subtract a year because its not my birthday yet
+        year--;
+      }
+      return year - 2006;
+      //  return the current year minus the year I was born
+    }
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.container {
+  display: block;
+  place-items: center;
+  width: 50vw;
+  margin-top: 80px;
+  p {
+    font-weight: bold;
+    font-size: 17px;
+  }
+}
+</style>
