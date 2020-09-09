@@ -1,10 +1,6 @@
 <template>
   <div class="container">
-    <img
-      src="https://raw.githubusercontent.com/willdoescode/willdoescode/master/willdoescode.JPG"
-      alt="me"
-      class="me"
-    />
+    <img :src="require('../assets/willdoescode.jpeg')" alt="me" class="me" />
     <h3>My name is Will Lane</h3>
   </div>
 </template>
