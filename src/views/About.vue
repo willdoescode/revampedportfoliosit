@@ -32,7 +32,7 @@ export default {
 .container {
   display: block;
   place-items: center;
-  width: 50vw;
+  width: 70vw;
   margin-top: 80px;
   p {
     font-weight: bold;

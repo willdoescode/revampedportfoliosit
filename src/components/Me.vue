@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'Me'
+  name: "Me"
 }
 </script>
 
@@ -22,12 +22,16 @@ export default {
 .me {
   width: 300px;
   border-radius: 50%;
-  transition: 0.3s;
+  transition: 0.8s;
   padding: 10px;
   background-color: #5d4257;
   background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);
   &:hover {
-    border-radius: 15px;
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  100% {
   }
 }
 </style>
