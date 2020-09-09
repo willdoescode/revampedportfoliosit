@@ -1,6 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Posts from "@/views/Posts";
+import Post from "@/views/Post";
+import Webdesign from "@/views/Webdesign";
+import Contacts from "@/views/Contacts";
 
 Vue.use(VueRouter);
 
@@ -24,7 +28,7 @@ const routes = [
   {
     path: "/contacts",
     name: "Contacts",
-    component: () => import("../views/Contacts"),
+    component: Contacts,
     meta: {
       title: "Contacts - Will Does Tech"
     }
@@ -32,7 +36,7 @@ const routes = [
   {
     path: "/webdesign",
     name: "Web Design",
-    component: import("../views/Webdesign"),
+    component: Webdesign,
     meta: {
       title: "Webdesign - Will Does Tech"
     }
@@ -40,7 +44,7 @@ const routes = [
   {
     path: "/posts",
     name: "posts",
-    component: import("../views/Posts"),
+    component: Posts,
     meta: {
       title: "Posts - Will Does Tech"
     }
@@ -48,7 +52,7 @@ const routes = [
   {
     path: "/posts/:id",
     name: "post",
-    component: import("../views/Posts"),
+    component: Post,
     meta: {
       title: "Post - Will Does Tech"
     }

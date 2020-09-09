@@ -1,0 +1,74 @@
+<template>
+  <div class="main">
+    <div class="post" v-for="post in posts" :key="post">
+      <router-link
+        class="nav-link"
+        :to="{ name: 'post', params: { id: post.id } }"
+      >
+        <div>
+          <div class="title">
+            {{ post.title }}
+          </div>
+          <div class="desc">
+            <p>{{ post.desc }}</p>
+          </div>
+        </div>
+      </router-link>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Posts",
+  data() {
+    return {
+      posts: [],
+      base: "/posts/"
+    };
+  },
+  methods: {
+    getAmount() {
+      // I fetch all of the post data in json
+      fetch(`https://raw.githubusercontent.com/willdoescode/webposts/master/posts/posts.json`)
+        .then(res => res.json())
+        .then(data => (this.posts = data));
+    }
+  },
+  beforeMount() {
+    this.getAmount();
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  margin: 10% auto;
+  .post {
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    flex-grow: 1;
+    .title {
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.3s;
+      &:hover {
+        color: #42b983;
+        text-decoration: underline;
+      }
+    }
+    .desc {
+      color: black;
+      transition: 0.3s;
+    }
+  }
+}
+</style>

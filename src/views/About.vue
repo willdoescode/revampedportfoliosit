@@ -5,7 +5,7 @@
       My coding journey so far has been interesting. I started with Python and I liked it very much. Using Python I wrote an automated
       <a target="_blank" href="https://github.com/willdoescode/bot">bot</a> for the popular chat service called discord. Then I moved on to Java, and wrote an
       <a target="_blank" href="https://github.com/willdoescode/willsautoclick"> autoclicker</a> using the popular Java library called swing.
-      Now I am at the web dev stage of my coding journey, I am learning the progressive JS framework called Vue.Js, which I wrote <a target="_blank" href="https://github.com/willdoescode/portfoliosite">this site</a> in and I am enjoying web dev very much.
+      Now I am at the web dev stage of my coding journey, I am learning the progressive JS framework called Vue, which I wrote <a target="_blank" href="https://github.com/willdoescode/portfoliosite">this site</a> in, and I am enjoying web dev very much.
     </p>
   </div>
 </template>
@@ -37,6 +37,18 @@ export default {
   p {
     font-weight: bold;
     font-size: 17px;
+    background-color: #4c4177;
+    background-image: linear-gradient(315deg, #4c4177, #2a5470);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    a {
+      color: #42b983;
+      transition: 0.3s;
+      &:hover {
+        color: turquoise;
+      }
+    }
   }
 }
 </style>

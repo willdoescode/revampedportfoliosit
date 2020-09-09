@@ -28,8 +28,8 @@ export default {
   border-radius: 50%;
   transition: 0.3s;
   padding: 10px;
-  background-color: #7f5a83;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background-color: #5d4257;
+  background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);
   &:hover {
     border-radius: 15px;
   }
