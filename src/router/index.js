@@ -45,7 +45,7 @@ const routes = [
     }
   },
   {
-    path: "webdesign/blog",
+    path: "/webdesign/blog",
     name: "Blog",
     component: Blog,
     meta: {
