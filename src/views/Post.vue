@@ -21,9 +21,18 @@ export default {
   },
   beforeMount() {
     // Get posts based off of route parameters
-    fetch(`https://raw.githubusercontent.com/willdoescode/webposts/master/posts/posts.json`).then(data => data.json()).then(res => this.post = {...res[this.$route.params.id]}).then(what => console.log(what))
+    fetch(
+      `https://raw.githubusercontent.com/willdoescode/webposts/master/posts/posts.json`
+    )
+      .then(data => data.json())
+      .then(res => (this.post = { ...res[this.$route.params.id] }))
+      .then(what => {
+        if (what.title === undefined) {
+          this.$router.push("/404");
+        }
+      });
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

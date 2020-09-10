@@ -7,6 +7,7 @@ import Webdesign from "@/views/Webdesign";
 import Contacts from "@/views/Contacts";
 import Blog from "@/webdesing/Blog";
 import Projects from "@/views/Projects";
+import forOrfor from "@/views/forOrfor";
 
 Vue.use(VueRouter);
 
@@ -73,6 +74,20 @@ const routes = [
     component: Post,
     meta: {
       title: "Post - Will Does Tech"
+    }
+  },
+  {
+    path: "/404",
+    component: forOrfor,
+    meta: {
+      title: "404 - Will Does Tech"
+    }
+  },
+  {
+    path: "*",
+    redirect: "/404",
+    meta: {
+      title: "404 - Will Does Tech"
     }
   }
 ];
