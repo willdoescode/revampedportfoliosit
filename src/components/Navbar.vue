@@ -14,6 +14,9 @@
             <router-link class="link" to="/about">About</router-link>
           </b-nav-item>
           <b-nav-item>
+            <router-link class="link" to="/projects">Projects</router-link>
+          </b-nav-item>
+          <b-nav-item>
             <router-link class="link" to="/contacts">Contacts</router-link>
           </b-nav-item>
           <b-nav-item>

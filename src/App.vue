@@ -17,6 +17,8 @@ export default {
     $route(to) {
       document.title = to.meta.title || "Will Does Tech";
     }
+  },
+  methods: {
   }
 };
 </script>

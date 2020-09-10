@@ -5,6 +5,8 @@ import Posts from "@/views/Posts";
 import Post from "@/views/Post";
 import Webdesign from "@/views/Webdesign";
 import Contacts from "@/views/Contacts";
+import Blog from "@/webdesing/Blog";
+import Projects from "@/views/Projects";
 
 Vue.use(VueRouter);
 
@@ -39,6 +41,22 @@ const routes = [
     component: Webdesign,
     meta: {
       title: "Webdesign - Will Does Tech"
+    }
+  },
+  {
+    path: "webdesign/blog",
+    name: "Blog",
+    component: Blog,
+    meta: {
+      title: "Blog Assignment - Will Does Tech"
+    }
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: Projects,
+    meta: {
+      title: "Projects - Will Does Tech"
     }
   },
   {
