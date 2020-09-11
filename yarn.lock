@@ -880,6 +880,13 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@guillaumebriday/vue-scroll-progress-bar@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@guillaumebriday/vue-scroll-progress-bar/-/vue-scroll-progress-bar-1.0.0.tgz#dc18c8419f9c6a566fa51f3640b274dfbbed143f"
+  integrity sha512-tjnofmtSK60p17CPhVipAagmmavIrqZd19EVbp/Pi5IXMJHCZ2pF7vvZjAuTdPD6A6d1vDjuApLkaASpjjvqzA==
+  dependencies:
+    lodash.throttle "4.1.1"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.1.4.tgz?cache=0&sync_timestamp=1593993773437&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Faddress%2Fdownload%2F%40hapi%2Faddress-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -5233,6 +5240,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.throttle@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
 lodash.transform@^4.6.0:
   version "4.6.0"
