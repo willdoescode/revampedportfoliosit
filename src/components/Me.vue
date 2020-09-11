@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img :src="require('../assets/willdoescode.jpeg')" alt="me" class="me" />
+    <img :src="require('../assets/Vinyl-PNG-Transparent-Image.png')" alt="me" class="me" />
     <h3>My name is Will Lane</h3>
   </div>
 </template>
@@ -27,15 +27,21 @@ export default {
   width: 300px;
   border-radius: 50%;
   transition: 0.8s;
-  padding: 10px;
+  padding: 2px;
   background-color: #5d4257;
   background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);
+  animation: spin 1s infinite linear;
+  animation-play-state: paused;
   &:hover {
-    transform: rotate(-360deg);
+    animation-play-state: running;
   }
 }
 @keyframes spin {
-  100% {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
 </style>

@@ -2,8 +2,8 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand href="/">Will Does Tech</b-navbar-brand>
-
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
@@ -26,6 +26,12 @@
             <router-link class="link" to="/posts">Posts</router-link>
           </b-nav-item>
         </b-navbar-nav>
+
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item right>
+            <img src="../assets/willdoescode.jpeg" style="width: 30px; border-radius: 50%; cursor: default">
+          </b-nav-item>
+        </b-navbar-nav>
       </b-collapse>
     </b-navbar>
   </div>
@@ -33,7 +39,7 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
 };
 </script>
 <style lang="scss" scoped>
