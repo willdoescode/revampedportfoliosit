@@ -30,7 +30,8 @@ export default {
   padding: 2px;
   background-color: #5d4257;
   background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);
-  animation: spin 1s infinite linear;
+  animation: spin 3s infinite;
+  animation-direction: alternate;
   animation-play-state: paused;
   &:hover {
     animation-play-state: running;
@@ -38,10 +39,10 @@ export default {
 }
 @keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(360deg) scale(1.1);
   }
 }
 </style>
