@@ -8,7 +8,7 @@
         {{ name }}
       </h3>
     </a>
-    <h3>lang: {{ lang }}</h3>
+    <h3><img alt="lang type" :src="langs[lang]" /></h3>
     <img class="image" :src="cool" alt="project image" style="width: 40vw" />
   </div>
 </template>
@@ -23,7 +23,14 @@ export default {
   },
   data() {
     return {
-      image: alert
+      image: alert,
+      langs: {
+        Java: "https://forthebadge.com/images/badges/made-with-java.svg",
+        Python: "https://forthebadge.com/images/badges/made-with-python.svg",
+        Js: "https://forthebadge.com/images/badges/made-with-javascript.svg",
+        Node: "https://forthebadge.com/images/badges/made-with-javascript.svg",
+        v: "https://forthebadge.com/images/badges/made-with-vue.svg"
+      }
     };
   }
 };
@@ -38,10 +45,10 @@ export default {
   }
 
   a {
-    color: #42b983;
+    color: indianred;
     transition: 0.3s;
     &:hover {
-      color: #2a5470;
+      color: palevioletred;
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <vue-scroll-progress-bar height="1vh" background-color="linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%)" />
+    <vue-scroll-progress-bar height="1vh" background-color="linear-gradient(315deg, #d2ccc4 0%, #2f4353 74%)" />
     <div class="page">
       <h1>
         All of my so very cool projects!
@@ -8,7 +8,7 @@
       <div class="projects">
         <Project
           name="This Site"
-          lang="Js"
+          lang="v"
           :cool="require('../assets/project1.png')"
           url="https://github.com/willdoescode/revampedportfoliosit"
         />
@@ -32,7 +32,7 @@
         />
         <Project
           name="Node Discord Bot"
-          lang="Node Js"
+          lang="Node"
           :cool="require('../assets/project4.png')"
           url="https://github.com/willdoescode/nodebot"
         />
