@@ -17,7 +17,7 @@ const routes = [
     name: "Home",
     component: Home,
     meta: {
-      title: "Home - Will Does Tech"
+      title: "Home - Will Lane"
     }
   },
   {
@@ -25,7 +25,7 @@ const routes = [
     name: "About",
     component: () => import("../views/About.vue"),
     meta: {
-      title: "About - Will Does Tech"
+      title: "About - Will Lane"
     }
   },
   {
@@ -33,7 +33,7 @@ const routes = [
     name: "Contacts",
     component: Contacts,
     meta: {
-      title: "Contacts - Will Does Tech"
+      title: "Contacts - Will Lane"
     }
   },
   {
@@ -41,7 +41,7 @@ const routes = [
     name: "Web Design",
     component: Webdesign,
     meta: {
-      title: "Webdesign - Will Does Tech"
+      title: "Webdesign - Will Lane"
     }
   },
   {
@@ -49,7 +49,7 @@ const routes = [
     name: "Blog",
     component: Blog,
     meta: {
-      title: "Blog Assignment - Will Does Tech"
+      title: "Blog Assignment - Will Lane"
     }
   },
   {
@@ -57,7 +57,7 @@ const routes = [
     name: "Projects",
     component: Projects,
     meta: {
-      title: "Projects - Will Does Tech"
+      title: "Projects - Will Lane"
     }
   },
   {
@@ -65,7 +65,7 @@ const routes = [
     name: "posts",
     component: Posts,
     meta: {
-      title: "Posts - Will Does Tech"
+      title: "Posts - Will Lane"
     }
   },
   {
@@ -73,21 +73,21 @@ const routes = [
     name: "post",
     component: Post,
     meta: {
-      title: "Post - Will Does Tech"
+      title: `Post - Will Lane`
     }
   },
   {
     path: "/404",
     component: forOrfor,
     meta: {
-      title: "404 - Will Does Tech"
+      title: "404 - Will Lane"
     }
   },
   {
     path: "*",
     redirect: "/404",
     meta: {
-      title: "404 - Will Does Tech"
+      title: "404 - Will Lane"
     }
   }
 ];

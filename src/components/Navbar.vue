@@ -1,26 +1,26 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="/">Will Does Tech</b-navbar-brand>
+      <b-navbar-brand href="/">Will Lane</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-nav tabs justified>
-          <b-nav-item>
+          <b-nav-item to="/">
             <router-link class="link" to="/">Home</router-link>
           </b-nav-item>
-          <b-nav-item>
+          <b-nav-item to="/about">
             <router-link class="link" to="/about">About</router-link>
           </b-nav-item>
-          <b-nav-item>
+          <b-nav-item to="/projects">
             <router-link class="link" to="/projects">Projects</router-link>
           </b-nav-item>
-          <b-nav-item>
+          <b-nav-item to="/contacts">
             <router-link class="link" to="/contacts">Contacts</router-link>
           </b-nav-item>
-          <b-nav-item>
+          <b-nav-item to="/webdesign">
             <router-link class="link" to="/webdesign">Webdesign</router-link>
           </b-nav-item>
-          <b-nav-item>
+          <b-nav-item to="/posts">
             <router-link class="link" to="/posts">Posts</router-link>
           </b-nav-item>
         </b-nav>
