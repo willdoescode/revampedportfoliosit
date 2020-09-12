@@ -1,13 +1,22 @@
 <template>
-  <div class="container">
-    <a target="_blank" href="https://github.com/willdoescode" @click="gitCopy"
+  <div class="what">
+    <b-breadcrumb>
+      <b-breadcrumb-item href="/">
+        <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+        Home
+      </b-breadcrumb-item>
+      <b-breadcrumb-item active>Contacts</b-breadcrumb-item>
+    </b-breadcrumb>
+    <div class="container">
+      <a target="_blank" href="https://github.com/willdoescode" @click="gitCopy"
       >
-      My Github
-    </a>
-    <a target="_blank" href="mailto:williamlane923@gmail.com" @click="emailCopy"
-    >
-      Email Me
-    </a>
+        My Github
+      </a>
+      <a target="_blank" href="mailto:williamlane923@gmail.com" @click="emailCopy"
+      >
+        Email Me
+      </a>
+    </div>
   </div>
 </template>
 

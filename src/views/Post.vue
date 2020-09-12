@@ -1,12 +1,22 @@
 <template>
-  <div class="container">
-    <div class="back">
-      <router-link class="btn-primary btn" to="/posts">Back</router-link>
-    </div>
-    <div class="post">
-      <!--    display the current posts title and body-->
-      <h1>{{ post.title }}</h1>
-      <h3>{{ post.body }}</h3>
+  <div class="what">
+    <b-breadcrumb>
+      <b-breadcrumb-item href="/">
+        <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+        Home
+      </b-breadcrumb-item>
+      <b-breadcrumb-item href="/posts">Posts</b-breadcrumb-item>
+      <b-breadcrumb-item active>{{ this.$route.params.id }}</b-breadcrumb-item>
+    </b-breadcrumb>
+    <div class="container">
+      <div class="back">
+        <router-link class="btn-primary btn" to="/posts">Back</router-link>
+      </div>
+      <div class="post">
+        <!--    display the current posts title and body-->
+        <h1>{{ post.title }}</h1>
+        <h3>{{ post.body }}</h3>
+      </div>
     </div>
   </div>
 </template>

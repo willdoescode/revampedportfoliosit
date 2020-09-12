@@ -1,19 +1,28 @@
 <template>
-  <div class="main">
-    <div class="post" v-for="post in posts" :key="post">
-      <router-link
-        class="nav-link"
-        :to="{ name: 'post', params: { id: post.id } }"
-      >
-        <div>
-          <div class="title">
-            {{ post.title }}
+  <div class="what">
+    <b-breadcrumb>
+      <b-breadcrumb-item href="/">
+        <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+        Home
+      </b-breadcrumb-item>
+      <b-breadcrumb-item active>Posts</b-breadcrumb-item>
+    </b-breadcrumb>
+    <div class="main">
+      <div class="post" v-for="post in posts" :key="post">
+        <router-link
+          class="nav-link"
+          :to="{ name: 'post', params: { id: post.id } }"
+        >
+          <div>
+            <div class="title">
+              {{ post.title }}
+            </div>
+            <div class="desc">
+              <p>{{ post.desc }}</p>
+            </div>
           </div>
-          <div class="desc">
-            <p>{{ post.desc }}</p>
-          </div>
-        </div>
-      </router-link>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
