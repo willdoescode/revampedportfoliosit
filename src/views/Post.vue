@@ -1,11 +1,11 @@
 <template>
   <div class="what">
     <b-breadcrumb>
-      <b-breadcrumb-item href="/">
+      <b-breadcrumb-item class="home" href="/">
         <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
         Home
       </b-breadcrumb-item>
-      <b-breadcrumb-item href="/posts">Posts</b-breadcrumb-item>
+      <b-breadcrumb-item class="home" href="/posts">Posts</b-breadcrumb-item>
       <b-breadcrumb-item active>{{ this.$route.params.id }}</b-breadcrumb-item>
     </b-breadcrumb>
     <div class="container">
@@ -66,5 +66,14 @@ export default {
 .btn {
   float: left;
   margin-right: -70px;
+}
+
+.home a {
+  color: #42b983;
+  transition: 0.3s;
+  &:hover {
+    color: turquoise;
+    text-decoration: none;
+  }
 }
 </style>
