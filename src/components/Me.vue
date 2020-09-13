@@ -28,7 +28,7 @@ export default {
     };
   },
   created() {
-    this.player.src = require("../assets/audio1.mp4");
+    this.player.src = require("../assets/audio1.mp3");
     let me = document.getElementsByClassName("me");
     me.addEventListener("mouseover", () => {
       this.play();
