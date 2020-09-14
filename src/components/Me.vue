@@ -7,7 +7,10 @@
       alt="me"
       class="me"
     />
-    <h3>My name is Will Lane</h3>
+    <div class="name">
+      <h3>Hello, my name is</h3>
+      <h3 class="my">Will Lane</h3>
+    </div>
   </div>
 </template>
 
@@ -24,7 +27,8 @@ export default {
   },
   data() {
     return {
-      player: new Audio()
+      player: new Audio(),
+      whitespace: " "
     };
   },
   created() {
@@ -38,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 $margin: 25px;
 
 .container {
@@ -71,6 +75,27 @@ $margin: 25px;
   to {
     transform: rotate(360deg);
     $margin: 60px;
+  }
+}
+
+.name {
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .my {
+    margin-top: -5px;
+    transition: 0.3s;
+    cursor: default;
+    &:hover {
+      cursor: default;
+      margin-top: 0;
+      transform: scale(1.1);
+      background: -webkit-linear-gradient(#a5c7b7, #42b983);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 </style>
