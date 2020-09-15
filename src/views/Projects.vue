@@ -75,6 +75,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .page {
+  justify-content: center;
   h1 {
     margin-top: 20px;
   }

@@ -34,13 +34,18 @@ export default {
 </script>
 <style lang="scss" scoped>
 .project {
-  h3 {
-    margin-left: 1.3vw;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .image {
     min-width: 300px;
   }
-
+  h3 {
+    float: left;
+    img {
+      float: left;
+    }
+  }
   a {
     color: indianred;
     transition: 0.3s;
