@@ -2,7 +2,12 @@
   <div class="what">
     <b-breadcrumb>
       <b-breadcrumb-item class="home" href="/">
-        <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+        <b-icon
+          icon="house-fill"
+          scale="1.25"
+          shift-v="1.25"
+          aria-hidden="true"
+        ></b-icon>
         Home
       </b-breadcrumb-item>
       <b-breadcrumb-item class="home" href="/posts">Posts</b-breadcrumb-item>
@@ -46,10 +51,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 .container {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 10% auto;
   max-width: 800px;
   .post {

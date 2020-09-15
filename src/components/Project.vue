@@ -1,9 +1,6 @@
 <template>
   <div class="project">
-    <a
-      target="_blank"
-      :href="url"
-    >
+    <a target="_blank" :href="url">
       <h3>
         {{ name }}
       </h3>

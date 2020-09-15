@@ -2,13 +2,21 @@
   <div class="what">
     <b-breadcrumb>
       <b-breadcrumb-item class="home" href="/">
-        <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+        <b-icon
+          icon="house-fill"
+          scale="1.25"
+          shift-v="1.25"
+          aria-hidden="true"
+        ></b-icon>
         Home
       </b-breadcrumb-item>
       <b-breadcrumb-item active>Projects</b-breadcrumb-item>
     </b-breadcrumb>
     <div class="container">
-      <vue-scroll-progress-bar height="1vh" background-color="linear-gradient(315deg, #d2ccc4 0%, #2f4353 74%)" />
+      <vue-scroll-progress-bar
+        height="1vh"
+        background-color="linear-gradient(315deg, #d2ccc4 0%, #2f4353 74%)"
+      />
       <div class="page">
         <h1>
           All of my so very cool projects!

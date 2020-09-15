@@ -5,6 +5,7 @@ import store from "./store";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import VueClipboard from "vue-clipboard2";
 import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
+import "./registerServiceWorker";
 
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);

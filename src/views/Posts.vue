@@ -2,7 +2,12 @@
   <div class="what">
     <b-breadcrumb>
       <b-breadcrumb-item class="home" href="/">
-        <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+        <b-icon
+          icon="house-fill"
+          scale="1.25"
+          shift-v="1.25"
+          aria-hidden="true"
+        ></b-icon>
         Home
       </b-breadcrumb-item>
       <b-breadcrumb-item active>Posts</b-breadcrumb-item>
@@ -39,7 +44,9 @@ export default {
   methods: {
     getAmount() {
       // I fetch all of the post data in json
-      fetch(`https://raw.githubusercontent.com/willdoescode/webposts/master/posts/posts.json`)
+      fetch(
+        `https://raw.githubusercontent.com/willdoescode/webposts/master/posts/posts.json`
+      )
         .then(res => res.json())
         .then(data => (this.posts = data));
     }
@@ -51,10 +58,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 .main {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;

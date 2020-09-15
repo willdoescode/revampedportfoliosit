@@ -1,8 +1,13 @@
 <template>
   <div class="what">
     <b-breadcrumb>
-      <b-breadcrumb-item href="/">
-        <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+      <b-breadcrumb-item class="home" href="/">
+        <b-icon
+          icon="house-fill"
+          scale="1.25"
+          shift-v="1.25"
+          aria-hidden="true"
+        ></b-icon>
         Home
       </b-breadcrumb-item>
       <b-breadcrumb-item active>404</b-breadcrumb-item>
@@ -35,6 +40,15 @@ export default {
     &:hover {
       transform: scale(1.2);
     }
+  }
+}
+
+.home a {
+  color: #42b983;
+  transition: 0.3s;
+  &:hover {
+    color: turquoise;
+    text-decoration: none;
   }
 }
 </style>

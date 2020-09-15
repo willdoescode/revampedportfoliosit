@@ -33,16 +33,15 @@
 export default {
   name: "Navbar",
   data() {
-    return {
-    }
+    return {};
   }
 };
 </script>
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 a {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: white;
   font-weight: bolder;
   transition: 0.3s;
